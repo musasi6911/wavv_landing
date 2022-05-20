@@ -17,6 +17,38 @@ body{
   margin: 0 auto;
 }
 
+/* ----------------------- Popup ---------------------- */
+#JPO{
+  background-color: #fff;
+  max-width: 500px;
+  padding: 50px 30px;
+  position: relative;
+  transform: scale(0.8);
+}
+.popup_visible #JPO {
+  transform: scale(1);
+}
+
+#JPO h3{
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--pri-color);
+}
+
+#JPO i{
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 24px;
+  color: #ccc;
+}
+
+#JPO i:hover{
+  color: #333;
+}
+
+
 /* ----------------------- Header ---------------------- */
 header{
   background-image: url(../img/header_bg.png);
@@ -102,6 +134,12 @@ header{
   margin-bottom: 10px;
 }
 
+.hd-content_form .error{
+  color: red;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
 .hd-content_form ol li:last-child{
   margin-top: 20px;
 }
@@ -177,6 +215,7 @@ header{
   border: 0;
   border-radius: 10px;
   color: white;
+  cursor: pointer;
 }
 
 .hd-content_form p{
