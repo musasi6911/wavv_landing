@@ -20,7 +20,7 @@ body{
 /* ----------------------- Header ---------------------- */
 header{
   background-image: url(../img/header_bg.png);
-  height: 1027px;
+  height: 1020px;
 }
 
 .hd-top{
@@ -44,7 +44,13 @@ header{
 .hd-top li a{
   color: white;
   font-size: 18px;
+  line-height: 40px;
+  display: block;
   text-decoration: none;
+}
+
+.hd-top li a:hover{
+  border-bottom: 3px solid white;
 }
 
 .hd-content{
@@ -85,6 +91,7 @@ header{
   font-size: 36px;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .hd-content_form ol{}
@@ -176,38 +183,129 @@ header{
   font-size: 14px;
 }
 
+/* ----------------------- About Us ---------------------- */
+.about{
+  background-image: url(../img/about_bg.png);
+  height: 400px;
+  color: white;
+}
 
+.about-content{
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
+.about-content h3{
+  font-size: 36px;
+  flex-basis: 100%;
+  text-align: center;
+}
 
+.about-content img{
+  margin-right: 110px;
+}
 
+.about-content p{
+  flex-basis: 800px;
+}
 
+/* ----------------------- Blocks ---------------------- */
+.main-block{}
 
+.main-block-content{
+  width: 1170px;
+  height: 430px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
 
+.main-block-content img{
+  position: relative;
+  top: 130px;
+  flex-shrink: 0;
+  margin-left: 50px;
+  margin-right: 130px;
+}
 
+.main-block-content_text{}
 
+.main-block-content_text h3{
+  font-size: 36px;
+  margin-bottom: 20px;
+}
 
+.main-block-content_text span{
+  color: var(--pri-color);
+}
 
+.main-block-content_text p{}
 
+.main-block-content_text b{
+  display: block;
+  font-size: 24px;
+}
 
+.block-gray{
+  background-color: #f6f6f6;
+}
 
+.block-gray img{
+  order: 2;
+  margin-right: 50px;
+  margin-left: 130px;
+}
 
+.block-gray .main-block-content_text{
+  order: 1;
+  margin-left: 50px;
+}
 
+/* ----------------------- Footer ---------------------- */
+footer{
+  background-color: #222;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 12px;
+}
 
+footer ul{
+  display: flex;
+  margin-bottom: 20px;
+}
 
+footer li{
+  padding: 0 15px;
+  position: relative;
+}
 
+footer li:not(:last-child):before{
+  content: '';
+  display: block;
+  width: 1px;
+  height: 14px;
+  background-color: #aaa;
+  position: absolute;
+  right: 0;
+}
 
+footer a{
+  color: #aaa;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+footer a:hover{
+  color: var(--pri-color);
+}
 
 
 
