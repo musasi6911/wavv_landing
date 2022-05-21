@@ -65,6 +65,10 @@ header{
 
 .hd-top img{}
 
+.hd-top i{
+  display: none;
+}
+
 .hd-top ul{
   display: flex;
 }
@@ -220,6 +224,7 @@ header{
 
 .hd-content_form p{
   font-size: 14px;
+  width: 190px;
 }
 
 /* ----------------------- About Us ---------------------- */

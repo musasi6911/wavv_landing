@@ -35,6 +35,11 @@ $(function(){
     })
   })
 
+  // RWD 漢堡選單點擊
+  $('.hd-top i').click(function(){
+    $('.hd-top ul').slideToggle();
+  })
+
 })
 
 
