@@ -20,6 +20,7 @@
   header{
     background-position: center center;
     background-size: cover;
+    padding: 0 20px;
   }
 
   .hd-top{
@@ -78,6 +79,10 @@
     width: auto;
   }
 
+  .hd-content_form{
+    width: 100%;
+  }
+
   .hd-content_form ol{
     /* display: none; */
   }
@@ -97,6 +102,8 @@
   }
 
   .hd-content_form p{
+    width: 0;
+    flex-grow: 1;
     padding-right: 20px;
   }
 
@@ -169,14 +176,15 @@
   .hd-content_title h2{
     font-size: 18px;
   }
-  
-  .hd-content{
-    padding: 0 20px;
-  }
 
   .hd-content_form p{
     width: 150px;
     font-size: 12px;
+  }
+
+  .hd-content_form b{
+    width: 20px;
+    height: 20px;
   }
 
 }
