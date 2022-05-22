@@ -2,7 +2,8 @@
 @media screen and (max-width: 1440px) {
 
   header{
-    height: 100vh;
+    height: auto;
+    padding-bottom: 30px;
   }
   
   .hd-content{
@@ -20,7 +21,7 @@
   header{
     background-position: center center;
     background-size: cover;
-    padding: 0 20px;
+    padding: 0 20px 30px;
   }
 
   .hd-top{
@@ -77,6 +78,10 @@
 
   .hd-content_title h1{
     width: auto;
+  }
+
+  .hd-content_title h2{
+    font-size: 5.5vw;
   }
 
   .hd-content_form{
