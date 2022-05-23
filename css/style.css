@@ -63,7 +63,9 @@ header{
   justify-content: space-between;
 }
 
-.hd-top img{}
+.hd-top img{
+  width: 60px;
+}
 
 .hd-top i{
   display: none;
@@ -251,6 +253,7 @@ header{
 }
 
 .about-content img{
+  width: 170px;
   margin-right: 110px;
 }
 
@@ -271,6 +274,7 @@ header{
 }
 
 .main-block-content img{
+  width: 300px;
   position: relative;
   top: 130px;
   flex-shrink: 0;

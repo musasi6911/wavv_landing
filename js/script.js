@@ -27,6 +27,10 @@ $(function(){
   })
 
   // 類別選取按鈕
+  $('.write').css({
+    'background-color': '#c30d22',
+    'border-color': '#c30d22',
+  })
   $('.write, .listen').click(function(){
     $('label').removeAttr('style');
     $(this).css({

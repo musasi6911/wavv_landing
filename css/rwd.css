@@ -19,6 +19,7 @@
   }
 
   header{
+    background-image: linear-gradient(rgba(0,0,0,.8), transparent 50%), url('../img/header_bg.png');
     background-position: center center;
     background-size: cover;
     padding: 0 20px 30px;
@@ -68,16 +69,17 @@
   }
 
   .hd-content{
-    padding-top: 50px;
+    padding-top: 150px;
     flex-direction: column;
   }
 
   .hd-content_title{
-    margin-bottom: 50px;
+    margin-bottom: 150px;
   }
 
   .hd-content_title h1{
     width: auto;
+    font-weight: 700;
   }
 
   .hd-content_title h2{
