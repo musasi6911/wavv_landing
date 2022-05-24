@@ -296,8 +296,7 @@ header{
 .main-block-content_text p{}
 
 .main-block-content_text b{
-  display: block;
-  font-size: 24px;
+  color: orange;
 }
 
 .block-gray{
