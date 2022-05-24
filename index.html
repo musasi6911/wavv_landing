@@ -52,15 +52,15 @@
           <form action="">
             <ol>
               <li>
-                <label for="wm" class="write"><input type="radio" name="choose" id="wm" checked><b></b>I write music</label>
-                <label for="lm" class="listen"><input type="radio" name="choose" id="lm"><b></b>I listen to music</label>
+                <label for="wm" class="write"><input type="radio" name="signup_pref" id="wm" checked><b></b>I write music</label>
+                <label for="lm" class="listen"><input type="radio" name="signup_pref" id="lm"><b></b>I listen to music</label>
               </li>
-              <li><input type="text" placeholder="Name..."></li>
-              <li><input type="text" placeholder="Email address..."></li>
+              <li><input type="text" placeholder="Name..." id="signup_name"></li>
+              <li><input type="text" placeholder="Email address..." id="signup_email"></li>
               <li class="error" style="display: none;">Error message here</li>
               <li>
                 <p>You can unsubscribe from these communications at any time.</p>
-                <input type="submit" value="Submit" class="JPO_open">
+                <input type="submit" value="Submit" class="JPO_open" id="signup_submit">
               </li>
             </ol>
           </form>
@@ -132,15 +132,31 @@
 <script>
   AOS.init();
 </script>
-<script>
+<script src="js/script.js"></script>
+<!-- Insert this script at the bottom of the HTML, but before you use any Firebase services -->
+<!-- <script type="module" src="js/beta_signups.js"></script> -->
+<script type="module">
+
+  import { writeUserData } from './js/beta_signups.js'
+
   $(document).ready(function() {
     $('#JPO').popup({
       escape: false,
       scrolllock: true,
       transition: 'all 0.3s'
     });
+
+    $('#signup_submit').click(function() {
+      var name = $('#signup_name').val()
+      var email = $('#signup_email').val()
+      var pref = 'write music'
+      if ($("#lm").prop("checked")) {
+        pref = 'listen to music'
+      }
+      writeUserData(name, email, pref)
+    })
+
   });
 </script>
-<script src="js/script.js"></script>
 </body>
 </html>
