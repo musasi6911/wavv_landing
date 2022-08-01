@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/range.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.svg">
+  <title>Wavv - Demo Page</title>
+</head>
+<body>
+  
+  <header class="upload-top">
+    <i class="bi bi-chevron-left"></i>
+    <h1>Upload Your Music</h1>
+  </header>
+
+  <main class="upload">
+
+    <h2 class="block-title">Choose a music file to upload</h2>
+    <div class="file-upload-block">
+      <label for="file-upload" class="file-upload-btn">Choose Music</label>
+      <input type="file" id="file-upload" style="display: none;">
+      <p>File Name...</p>
+    </div>
+    <div class="img-upload-block">
+      <label for="img-upload-input" class="img-upload">
+        <p>Choose a cover image to<br>upload for the song</p>
+        <img id="show-img" src="#" style="display: none;">
+      </label>
+      <input type="file" id="img-upload-input" style="display: none;">
+    </div>
+
+    <h2 class="block-title">Copyright</h2>
+    <div class="up-copyright">
+      <p>What percentage of the song’s copyright do you own?</p>
+      <input type="range" value="0">
+      <h4>0</h4>
+    </div>
+
+    <h2 class="block-title">Wavv’s Super Stage</h2>
+
+    <div class="up-sptage">
+
+      <p>Do you want to drop your work on Wavv’s Super Stage? </p>
+      <ul class="up-stage_ans">
+        <li><button class="js-yes1"><i class="bi bi-check2"></i>Yes</button></li>
+        <li><button class="js-no1"><i class="bi bi-x"></i>No</button></li>
+      </ul>
+
+      <p class="js-step7">How many NFT Tokens do you want to create?</p>
+      <input type="text" class="js-step7">
+
+      <p class="js-step8">Do you want to add any perks with each token?</p>
+      <ul class="up-stage_ans js-step8">
+        <li><button class="js-yes2"><i class="bi bi-check2"></i>Yes</button></li>
+        <li><button class="js-no2"><i class="bi bi-x"></i>No</button></li>
+      </ul>
+
+      <p class="js-step9">Please describe what perks you want to add in? </p>
+      <input type="text" class="js-step9">
+
+      <p class="js-step10">Do you want to sell part of your streaming right along with each token?</p>
+      <ul class="up-stage_ans js-step10">
+        <li><button class="js-yes3"><i class="bi bi-check2"></i>Yes</button></li>
+        <li><button class="js-no3"><i class="bi bi-x"></i>No</button></li>
+      </ul>
+
+      <p class="js-step11">What percentage do you want to sell?</p>
+      <input type="text" class="js-step11">
+
+      <p class="js-step12">You are almost done uploading your work! Do you want to share this exciting news on social media before you finish?</p>
+      <ul class="up-stage_social js-step12">
+        <li><i class="bi bi-facebook"></i></li>
+        <li><i class="bi bi-twitter"></i></li>
+        <li><i class="bi bi-instagram"></i></li>
+        <li><i class="bi bi-pinterest"></i></li>
+      </ul>
+      
+    </div>
+
+    <button class="up-upload-btn js-upload-btn" onclick="location.href='content.html'">Upload Your Music</button>
+
+    
+
+    
+
+
+  </main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+  $(function() {
+    var rangePercent = $('[type="range"]').val();
+    $('[type="range"]').on('change input', function() {
+      rangePercent = $('[type="range"]').val();
+      $('h4').text(rangePercent);
+      $('[type="range"]').css('filter', 'hue-rotate(-' + rangePercent + 'deg)');
+    });
+  });
+</script>
+</body>
+</html>
