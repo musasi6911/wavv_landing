@@ -104,6 +104,9 @@ header{
 /* left title */
 .hd-content_title{
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hd-content_title h1{
@@ -120,6 +123,28 @@ header{
   font-size: 25px;
   margin-top: 10px;
   text-align: center;
+}
+
+.hd-content_title a{
+  margin-top: 50px;
+  background-color: #fff;
+  color: #7289d9;
+  padding: 0 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hd-content_title i{
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+.hd-content_title span{
+  font-weight: bold;
 }
 
 /* right form */
