@@ -50,7 +50,12 @@
               <li><input type="text" placeholder="Email address..." id="signup_email"></li>
               <li class="error" style="display: none;">Error message here</li>
               <li>
-                <label for="dcheck" class="hd-content_form_discord"><input type="checkbox" id="dcheck"><p><i class="fa-solid fa-check"></i></p><i class="fa-brands fa-discord"></i><span>Join the Wavv Discord Server!</span></label>
+                <label for="dcheck" class="hd-content_form_discord">
+                  <input type="checkbox" id="dcheck">
+                  <p><i class="fa-solid fa-check"></i></p>
+                  <i class="fa-brands fa-discord"></i>
+                  <span>Join the Wavv Discord Server!</span>
+                </label>
                 <input type="submit" value="Submit" class="JPO_open" id="signup_submit">
               </li>
             </ol>
@@ -151,6 +156,11 @@
         pref = 'listen to music'
       }
       writeUserData(name, email, pref)
+      
+      var dcheck = $('#dcheck');
+      if(dcheck.prop('checked')){
+        window.open('https://discord.gg/GdMmKbuH', '_blank');
+      }
     })
 
   });
