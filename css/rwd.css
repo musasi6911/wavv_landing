@@ -69,7 +69,7 @@
   }
 
   .hd-content{
-    padding-top: 100px;
+    padding-top: 150px;
     flex-direction: column;
   }
 
@@ -108,10 +108,8 @@
     height: 26px;
   }
 
-  .hd-content_form p{
-    width: 0;
-    flex-grow: 1;
-    padding-right: 20px;
+  .hd-content_form input[type="submit"]{
+    width: 160px;
   }
 
   .about{
@@ -184,9 +182,12 @@
     font-size: 18px;
   }
 
-  .hd-content_form p{
-    width: 150px;
+  .hd-content_form_discord{
     font-size: 12px;
+  }
+
+  .hd-content_form input[type="submit"]{
+    width: 150px;
   }
 
   .hd-content_form b{
@@ -194,9 +195,6 @@
     height: 20px;
   }
 
-  .hd-content_title span{
-    font-size: 13px;
-  }
 
 }
 
