@@ -269,7 +269,6 @@ header{
 /* ----------------------- About Us ---------------------- */
 .about{
   background-image: url(../img/about_bg.png);
-  height: 400px;
   color: white;
 }
 
@@ -277,6 +276,7 @@ header{
   width: 1170px;
   margin: 0 auto;
   padding-top: 45px;
+  padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
