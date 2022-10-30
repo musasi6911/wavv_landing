@@ -127,6 +127,23 @@
     <i class="fa-solid fa-xmark JPO_close"></i>
   </div>
 
+  <!-- Wavv Soft-launch Party Popup -->
+  <div class="wsl-mask">
+    <div class="wsl-out">
+      <i class="fa-solid fa-xmark"></i>
+      <picture>
+        <source srcset="img/Bitter_Sweet_Guild_mobile.jpg" media="(max-width: 428px)">
+        <img src="img/Bitter_Sweet_Guild_pc.jpg" alt="">
+      </picture>
+      <div class="wsl-content">
+        <h1>Wavv Soft-launch Party</h1>
+        <h2>ft. Bitter:Sweet</h2>
+        <p><b>The Guild Theatre, Menlo Park, CA</b><b>12/6 at 8pm</b></p>
+        <a href="https://guildtheatre.com/events/bittersweet/" target="_blank">TICKETS</a>
+      </div>
+    </div>
+  </div>
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -147,6 +164,18 @@
       scrolllock: true,
       transition: 'all 0.3s'
     });
+
+    $('.wsl-out .fa-xmark').click(function(){
+      $('.wsl-mask').hide();
+    })
+
+    $('.wsl-mask').click(function(){
+      $('.wsl-mask').hide();
+    })
+
+    $('.wsl-out').click(function(e){
+      e.stopPropagation();
+    })
 
     $('#signup_submit').click(function() {
       var name = $('#signup_name').val()
