@@ -275,8 +275,12 @@ header{
 .about-content{
   width: 1170px;
   margin: 0 auto;
+<<<<<<< Updated upstream
   padding-top: 45px;
   padding-bottom: 50px;
+=======
+  padding: 45px 0 55px;
+>>>>>>> Stashed changes
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
