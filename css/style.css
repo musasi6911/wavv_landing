@@ -52,7 +52,8 @@ body{
 /* ----------------------- Header ---------------------- */
 header{
   background-image: url(../img/header_bg.png);
-  height: 1020px;
+  background-size: cover;
+  height: 90svh;
 }
 
 .hd-top{
@@ -97,8 +98,13 @@ header{
   margin: 0 auto;
   color: white;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.hd-content i{
+  display: none;
 }
 
 /* left title */
@@ -123,6 +129,25 @@ header{
   font-size: 25px;
   margin-top: 10px;
   text-align: center;
+}
+
+.hd-enter{
+  background-color: var(--pri-color);
+  width: 190px;
+  height: 60px;
+  line-height: 60px;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  margin-top: 100px;
+  border: 3px solid transparent;
+}
+
+.hd-enter:hover{
+  border-color: white;
 }
 
 
@@ -269,11 +294,12 @@ header{
 /* ----------------------- About Us ---------------------- */
 .about{
   background-image: url(../img/about_bg.png);
+  background-size: cover;
   color: white;
 }
 
 .about-content{
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 45px 0 55px;
   display: flex;
@@ -295,6 +321,10 @@ header{
 
 .about-content p{
   flex-basis: 800px;
+}
+
+.about-content b{
+  color: yellow;
 }
 
 /* ----------------------- Blocks ---------------------- */
@@ -323,16 +353,21 @@ header{
 .main-block-content_text h3{
   font-size: 36px;
   margin-bottom: 20px;
+  line-height: 1.4;
 }
 
 .main-block-content_text span{
   color: var(--pri-color);
+  display: block;
 }
 
 .main-block-content_text p{}
 
 .main-block-content_text b{
   color: orange;
+  display: block;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
 .block-gray{
